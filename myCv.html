@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta start  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta end -->
+
+    <!-- Font Awesome start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome End -->
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="miuul.css">
+
+    <!-- JS script -->
+    <script src="miuul.js"></script>
+
+
+    <!-- Title start -->
+    <title>My Cv</title>
+</head>
+
+<body>
+    <!-- form start -->
+    <form action="#">
+
+        <fieldset>
+            <legend>My CV</legend>
+            <!-- Id sections start -->
+            <section>
+                <label for="name_id">Name:</label>
+                <input type="text" name="name" id="name_id" required placeholder="Name">
+
+                <label for="surname_id">Surname</label>
+                <input type="text" name="surname" id="surname_id" required placeholder="Surname">
+            </section>
+            <!-- Id sections end -->
+
+            <!-- select section start -->
+            <section>
+                <select name="bolum" id="bolum_id" required aria-placeholder="Bolumunuz">
+                    <option value="select" selected disabled>Select</option>
+                    <option value="bilgisayar_muhendisligi" id="bilgisayar_muhendisligi">Bilgisayar Mühendisliği
+                    </option>
+                    <option value="yazilim_muhendisligi" id="yazilim_muhendisligi">Yazılım Mühendisliği</option>
+                    <option value="elektrik_elektronik_muhendisligi" id="elektrik_elektronik_muhendisligi">
+                        Elektrik-Elektronik
+                        Mühendisliği</option>
+                    <option value="isletme" id="isletme">İşletme</option>
+                    <option value="mimarlik" id="mimarlik">Mimarlık</option>
+                </select>
+            </section>
+            <!-- select section end -->
+
+            <!-- cinsiyet section start -->
+            <section>
+                <label for="cinsiyet_id_kadin">Erkek</label>
+                <input type="radio" name="cinsiyet" id="cinsiyet_id_erkek" value="Erkek">
+
+                <label for="cinsiyet_id_kadin">Kadin</label>
+                <input type="radio" name="cinsiyet" id="cinsiyet_id_kadin" value="Kadin">
+            </section>
+            <!-- cinsiyet section end -->
+
+            <!-- Yetenek section start -->
+            <section>
+                <label for="python">Python</label>
+                <input type="checkbox" name="python" id="python">
+
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" name="javascript" id="javascript">
+
+                <label for="html_css">HTML/CSS</label>
+                <input type="checkbox" name="html_css" id="html_css">
+
+                <label for="sql">SQL</label>
+                <input type="checkbox" name="sql" id="sql">
+
+                <label for="react">React</label>
+                <input type="checkbox" name="react" id="react">
+
+                <label for="liderlik">Liderlik</label>
+                <input type="checkbox" name="liderlik" id="liderlik">
+
+                <label for="iletisim">İletişim</label>
+                <input type="checkbox" name="iletisim" id="iletisim">
+
+                <label for="takim_calismasi">Takım Çalışması</label>
+                <input type="checkbox" name="takim_calismasi" id="takim_calismasi">
+
+                <label for="problem_cozme">Problem Çözme</label>
+                <input type="checkbox" name="problem_cozme" id="problem_cozme">
+
+                <label for="zaman_yonetimi">Zaman Yönetimi</label>
+                <input type="checkbox" name="zaman_yonetimi" id="zaman_yonetimi">
+            </section>
+            <!-- Yetenek section end -->
+
+            <!-- Contact section start -->
+            <section>
+                <label for="telefon_id">Telefon Numara</label>
+                <input type="tel" name="telofon_numara" id="telefon_id" required placeholder="Telefon Numariniz">
+            </section>
+            <!-- Contact section end -->
+
+            <!-- Aciklama section start -->
+            <section>
+                <label for="aciklama_id">Aciklama</label>
+                <textarea name="aciklama" id="aciklama_id" required placeholder="Aciklama yaziniz"></textarea>
+            </section>
+            <!-- Aciklama section end -->
+        </fieldset>
+    </form>
+    <!-- form end -->
+</body>
+
+</html>
